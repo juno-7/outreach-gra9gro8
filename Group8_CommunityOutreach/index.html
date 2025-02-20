@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+            
+            <style>
+
+                body{
+                    background-color: #AD8B73;
+                }
+
+                header{
+                    color: #FFFBE9;
+                    font-family: "Rubik", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+                    animation: pop-up 0.5s forwards;
+                    animation-delay: 0.5s;
+                    text-align: center;
+                    background-color: #CEAB93;
+                    border-radius: 10px;
+                    opacity: 0;
+                }
+
+                .smile{
+                    font-size: 18px;
+                    max-width: 600px;
+                    margin: 0 auto;
+                    color: #FFFBE9;
+                }
+
+                @keyframes pop-up{
+                    0%{
+                        transform: scale(0);
+                        opacity: 0;
+                    }
+                    100%{
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                }
+
+                .gallery {
+                    display: flex; 
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin: 20px auto;
+                    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .gallery img{
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                    display: block;
+                    transform: scale(1.05);
+                    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5);
+                    border-radius: 10px;
+                }
+
+                .img2{
+                    animation: pop-up 1s forwards;
+                    animation-delay: 1s;
+                    opacity: 0;
+                }
+
+                nav{
+                    animation: pop-up 1s forwards;
+                    opacity: 0;
+                    text-align: center;
+                    font-family: "Rubik", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+                    margin: 10px;
+                }
+
+                nav a {
+                    display: inline-block;
+                    padding: 10px 15px;
+                    margin: 5px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                }
+
+                a{
+                    color: #FFFBE9;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+
+                a:hover{
+                    color: #E3CAA5;
+                    transform: scale(1.1);
+                }
+
+                footer{
+                    text-align: center;
+                    font-family: "Rubik", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 450;
+                    font-style: normal;
+                    color: #E3CAA5;
+                    background-color: #CEAB93;
+                    padding: 5px;
+                    animation: pop-up 1.5s forwards;
+                    animation-delay: 1.5s;
+                    opacity: 0;
+                    padding: 10px;
+                    font-size: 14px;
+                }
+
+                .h{
+                    background-color: #CEAB93;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .a{
+                    background-color: #CEAB93;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .p{
+                    background-color: #CEAB93;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .cu{
+                    background-color: #CEAB93;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .gi{
+                    background-color: #CEAB93;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .g{
+                    background-color: #CEAB93;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .h:hover{
+                    background-color: #FFFBE9;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .a:hover{
+                    background-color: #FFFBE9;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .p:hover{
+                    background-color: #FFFBE9;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .cu:hover{
+                    background-color: #FFFBE9;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .gi:hover{
+                    background-color: #FFFBE9;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .g:hover{
+                    background-color: #FFFBE9;
+                    border: 3px solid #E3CAA5;
+                    border-radius: 4px;
+                    padding: 5px;
+                }
+
+                .h, .a, .p, .cu, .gi, .g {
+                    transition: all 0.3s ease-in-out;
+                }
+
+                .h:hover, .a:hover, .p:hover, .cu:hover, .gi:hover, .g:hover {
+                    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+                    transform: translateY(-3px);
+                }
+
+                .logo{
+                    max-width: 100px;
+                    max-height: 100px;
+                }
+            </style>
+        </head>
+        <body>
+            
+            <header>
+
+                <nav>
+                    <a href="index.html" class="h">Home</a> |
+                    <a href="about.html" class="a">About</a> |
+                    <a href="programs.html" class="p">Programs</a> |
+                    <a href="contact.html" class="cu">Contact Us</a> |
+                    <a href="donation.html" class="gi">Get Involved</a> |
+                    <a href="gallery.html" class="g">The Gallery</a>
+                </nav>
+
+                <img class="logo" src="Serving_Smiles__3_-removebg-preview.png">
+
+                <h1 class="smiles">
+                    Serving Smiles - Canteen Appreciation Day
+                </h1>
+                <p>
+                    Made Possible By 9 St. Matthew
+                </p>
+                <p class="smile">
+                    A heartfelt celebration to recognize the dedication of our canteen staff. Thank you for serving us with love and care!
+                </p>
+            </header>
+
+            <main>
+
+                <div class="gallery">
+                    <img class="img2" src="IMG_2562.jpg">
+                </div>
+
+            </main>
+
+            <footer>
+                <p>
+                    9 St. Matthew | SY 2024-2025 | All Credits Reserved
+                </p>
+            </footer>
+        </body>
+    </html>
